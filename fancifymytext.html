@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Fancy Text Maker</title>
+		<script src="fancifymytext.js"></script>
+	</head>
+
+	<body>
+		<h1>Fancify my Text</h1>
+		<label for="text">Enter Text</label>
+		<fieldset name="text">
+			<textarea id="textInput" rows="4", cols="30"></textarea>
+		</fieldset>
+
+		<label for="text">Fancify</label>
+		<fieldset name="fancify">
+			<button onclick="changeTextSize()">Bigger!</button>
+			<label>
+				<input type="radio" id="textInput" name="fancifyText" onchange="fancifyText()">
+				FancyShmancy
+			</label>
+			<label>
+				<input type="radio" id="textInput" name="fancifyText" onchange="normalizeText()">
+				BoringBetty
+			</label>
+			<button onclick="capitalizeText()">Moo</button>
+		</fieldset>
+	</body>
+</html>
